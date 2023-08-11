@@ -1,0 +1,75 @@
+.header{
+    &__inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 24px 0;
+    }
+    &__navigation{
+        display: flex;
+        gap: 24px;
+        align-items: center;
+        @media screen and (max-width: 750px) {
+            flex-direction: row-reverse;
+        }
+        @media screen and (max-width: 419px) {
+            gap: 12px;   
+        }
+    }
+    &__btns{
+        display: flex;
+        gap: 12px;
+    }
+    &__login{
+        display: inline-block;
+        padding: 11px 28px;
+        border-radius: 10px;
+        border: 1px solid #FFF;
+        transition: all 0.5s ease;
+        &:hover{
+            border: 1px solid $blue;
+            background-color: $blue;
+        }
+        @media screen and (max-width: 419px) {
+            padding: 11px 22px;
+        }
+    }
+    &__register{
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 40px;
+        padding: 2px 28px;
+        border-radius: 10px;
+        border: 1px solid $blue;
+        background-color: $blue;
+        transition: all 0.5s ease;
+        &:hover{
+            border: 1px solid $white;
+            background-color: $background;
+        }
+        @media screen and (max-width: 419px) {
+            padding: 2px 14px;
+        }
+    }
+    &__nav-btn{
+        display: none;
+        & span{
+            display: block;
+            background-color: #fff;
+            width: 37px;
+            height: 3px;
+            border-radius: 4px;
+            margin: 6px 0;
+        }
+        @media screen and (max-width: 750px) {
+            display: block;
+            position: relative;
+            z-index: 2;
+            cursor: pointer;
+            padding: 8px;
+            border-radius: 10px;
+            background-color: $blue;
+        }
+    }
+}

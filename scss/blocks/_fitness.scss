@@ -1,0 +1,104 @@
+.fitness{
+    &__inner{
+        display: flex;
+        gap: 116px;
+        align-items: center;
+        padding: 40px 0;
+        @media screen and (max-width: 819px) {
+            justify-content: center;
+            text-align: center;
+        }
+    }
+    &__desc{
+        max-width: 530px;
+    }
+    &__title{
+        font-size: 64px;
+        font-weight: 700;
+        font-family: $font-bold;
+        @media screen and (max-width: 899px) {
+            font-size: 52px;
+        }
+        @media screen and (max-width: 539px) {
+            font-size: 40px;
+        }
+    }
+    &__text{
+        font-size: 18px;
+        color: $grey;
+        padding: 12px 0 32px;
+    }
+    &__btns{
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        @media screen and (max-width: 819px) {
+            justify-content: center;
+        }
+        @media screen and (max-width: 419px) {
+            flex-direction: column;
+        }
+    }
+    &__start{
+        display: inline-block;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 40px;
+        padding: 2px 28px;
+        border: 1px solid $blue;
+        border-radius: 10px;
+        background-color: $blue;
+        transition: all 0.5s ease;
+        &:hover{
+            background-color: $background;
+            border: 1px solid $white;
+        }
+    }
+    &__demo{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    &__images{
+        @media screen and (max-width: 819px) {
+            display: none;
+        }
+    }
+    &__wrapper{
+        width: 554px;
+        position: relative;
+        @media screen and (max-width: 1099px) {
+            width: auto;        
+        }
+    }
+    &__background{
+        font-size: 142px;
+        font-weight: 900;
+        font-family: $font-bold;
+        color: $background-section;
+        transform: rotate(-90deg);
+        position: absolute;
+        top: 150px;
+        right: 320px;
+        z-index: -1;
+        @media screen and (max-width: 1099px) {
+            display: none;
+        }
+    }
+    &__customer{
+        width: 195px;
+        position: absolute;
+        top: 45px;
+        left: 360px;
+        @media screen and (max-width: 1099px) {
+            display: none;
+        }
+    }
+    &__customer-text{
+        font-size: 18px;
+        font-family: $font-bold;
+        padding-top: 24px;
+    }
+}

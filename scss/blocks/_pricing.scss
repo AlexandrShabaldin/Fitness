@@ -1,0 +1,132 @@
+.pricing{
+    &__inner{
+        padding: 120px 0 80px;
+        @media screen and (max-width: 650px) {
+            padding: 50px 0 65px;
+        }
+    }
+    &__top{
+        text-align: center;
+    }
+    &__subtitle{
+        font-size: 18px;
+        font-weight: 600;
+        color: $blue;
+    }
+    &__title{
+        font-size: 48px;
+        font-weight: 700;
+        font-family: $font-bold;
+        padding: 16px 0 32px;
+    }
+    &__btns{
+        display: inline-block;
+        background-color: $white;
+        border-radius: 14px;
+        padding: 8px 12px;
+    }
+    &__montly{
+        background-color: $background;
+        border-radius: 12px;
+        padding: 11px 24px;
+        margin-right: 16px;
+        transition: all 0.5s ease;
+        &:hover{
+            color: $pricing;
+            background-color: $white;
+        }
+        @media screen and (max-width: 650px) {
+            margin-right: 10px;
+        }
+    }
+    &__yearly{
+        color: $pricing;
+        border-radius: 12px;
+        padding: 11px 24px;
+        transition: all 0.5s ease;
+        &:hover{
+            color: $white;
+            background-color: $background;
+        }
+    }
+    &__cards{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        padding-top: 32px;
+        @media screen and (max-width: 1250px) {
+            display: grid;
+            justify-items: center;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media screen and (max-width: 650px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__card{
+        width: 280px;
+        padding: 24px 27px;
+        border-radius: 16px;
+        background-color: $slider;
+        position: relative;
+    }
+    &__card-athlete{
+        width: 284px;
+    }
+    &__card-offer{
+        width: 292px;
+        padding: 24px 34px;
+        background-color: $blue;
+    }
+    &__card-title{
+        font-size: 20px;
+        font-weight: 600;
+        font-family: $font-bold;
+        color: $blue;
+    }
+    &__card-title--offer{
+        color: $white;
+    }
+    &__card-price{
+        font-size: 56px;
+        font-weight: 600;
+        font-family: $font-bold;
+        padding: 24px 0 8px;
+    }
+    &__card-bill{
+        color: $card;
+    }
+    &__card-bill--offer{
+        color: $white;
+    }
+    &__card-list{
+        padding: 24px 0 22px;
+    }
+    &__card-list--offer{
+        padding: 24px 0 68px;
+    }
+    &__card-item{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+    &__card-btn{
+        background-color: $blue;
+        border-radius: 12px;
+        padding: 16px 60px;
+        transition: all 0.5s ease;
+        &:hover{
+            color: $blue;
+            background-color: $white;
+        }
+    }
+    &__card-btn--offer{
+        background-color: $background;
+        padding: 16px 59px;
+        margin-bottom: 10px;
+        &:hover{
+            color: $background;
+        }
+    }
+}
